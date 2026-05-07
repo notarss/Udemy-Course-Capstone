@@ -1,2 +1,2 @@
 # Udemy-Course-Capstone
-A simple resume that I made with pure HTML only without any other additions.
+All of my progress that I made throughout all of Udemy Fullstack Development Bootcamp.
