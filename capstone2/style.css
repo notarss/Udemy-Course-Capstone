@@ -1,0 +1,500 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #e6e0e0;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0 40px;
+}
+
+.navbar {
+  height: 60px;
+  background-color: black;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navbar h3 {
+  color: white;
+  flex-basis: 1100px;
+}
+
+.navbar a {
+  font-weight: 400;
+  color: #999999;
+}
+
+a:link {
+  text-decoration: none;
+  color: #999999;
+}
+
+a:hover {
+  color: white;
+}
+
+.hero {
+  height: 500px;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.hero .nama {
+  width: 700px;
+}
+
+.nama #judul {
+  color: #888888;
+  font-size: 15px;
+}
+
+.nama #deskripsi-hero {
+  color: #999999;
+  width: 600px;
+  font-size: 20px;
+}
+
+.nama h1 {
+  font-size: 70px;
+  margin-top: 0;
+}
+
+.hero .foto {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  align-items: center;
+  padding-left: 400px;
+}
+
+#foto-ava {
+  width: 300px;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #333333;
+}
+
+.about {
+  padding: 0 40px;
+  padding-top: 40px;
+  color: #494949;
+}
+
+.header-alt {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.header-alt::after {
+  content: "";
+  flex: 1;
+  margin-left: 20px;
+  height: 1.6px;
+  background-color: #999999;
+}
+
+.background-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 25px;
+  margin: 50px 0;
+}
+
+.background-grid .background {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #494949;
+}
+
+.background > p {
+  padding-left: 30px;
+}
+
+.background .isi {
+  margin-top: 0;
+}
+
+.background .judul {
+  margin-bottom: 5px;
+}
+
+.pemisah {
+  background-color: #999999;
+  height: 2px;
+  width: 100%;
+}
+
+.skills {
+  padding: 20px 40px;
+  color: #494949;
+  padding-bottom: 40px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.skill-kotak {
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #494949;
+  padding: 0 15px;
+}
+
+.skill-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+
+.skill {
+  background-color: #d4d4d4;
+  padding: 5px;
+  color: black;
+  border: 1px solid #999999;
+  border-radius: 3px;
+}
+
+.projects {
+  padding: 20px 40px;
+  color: #494949;
+  padding-bottom: 50px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.project {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #999999;
+}
+
+#capstone1 {
+  width: 468px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.skill-used {
+  display: flex;
+  padding: 0 15px;
+  gap: 10px;
+}
+
+.project-detail {
+  padding: 0 15px;
+}
+
+.project a:visited {
+  color: black;
+}
+
+.project a:hover {
+  color: #8f8585;
+}
+
+.project a:active {
+  color: black;
+}
+
+.project-image {
+  height: 210px;
+  width: 468px;
+}
+
+#porfolio-website {
+  width: 468px;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.contact {
+  padding: 20px 40px;
+  color: #494949;
+  padding-bottom: 100px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-container {
+  display: flex;
+  background-color: white;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  padding: 0 30px;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-logo {
+  display: flex;
+  background-color: #e2e2e2;
+  width: 40px;
+  height: 40px;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-image {
+  width: 20px;
+}
+
+.footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #999999;
+  background-color: black;
+  height: 80px;
+}
+
+/* ── TABLET (max 1024px) ─────────────────────────── */
+@media (max-width: 1024px) {
+  .hero {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .hero .nama {
+    width: 100%;
+  }
+
+  .nama h1 {
+    font-size: 50px;
+  }
+
+  .nama #deskripsi-hero {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .hero .foto {
+    width: auto;
+    padding-left: 40px;
+  }
+
+  #foto-ava {
+    width: 200px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #capstone1,
+  #porfolio-website,
+  .project-image {
+    width: 100%;
+    height: 180px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── MOBILE (max 768px) ──────────────────────────── */
+@media (max-width: 768px) {
+  .flex-container {
+    padding: 0 20px;
+  }
+
+  /* Navbar */
+  .navbar {
+    gap: 16px;
+  }
+
+  .navbar h3 {
+    flex-basis: auto;
+    flex: 1;
+  }
+
+  .navbar a {
+    font-size: 12px;
+  }
+
+  /* Hero */
+  .flex-container.hero {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    gap: 24px;
+  }
+
+  .hero .nama {
+    width: 100%;
+  }
+
+  .nama h1 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  .nama #deskripsi-hero {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .hero .foto {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  #foto-ava {
+    width: 150px;
+  }
+
+  /* About */
+  .about {
+    padding: 30px 20px;
+  }
+
+  .background-grid {
+    grid-template-columns: 1fr;
+    margin: 30px 0;
+    gap: 15px;
+  }
+
+  /* Skills */
+  .skills {
+    padding: 20px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects */
+  .projects {
+    padding: 20px;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  #capstone1,
+  #porfolio-website,
+  .project-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 20px;
+    padding-bottom: 60px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    padding: 0 20px;
+    gap: 16px;
+  }
+}
+
+/* ── MOBILE KECIL (max 480px) ────────────────────── */
+@media (max-width: 480px) {
+  .navbar a {
+    font-size: 11px;
+  }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .nama h1 {
+    font-size: 28px;
+  }
+
+  .nama #deskripsi-hero {
+    font-size: 14px;
+  }
+
+  #foto-ava {
+    width: 120px;
+  }
+
+  .background-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── DESKTOP BESAR (min 1440px) ──────────────────── */
+@media (min-width: 1440px) {
+  .flex-container {
+    padding: 0 80px;
+  }
+
+  .nama h1 {
+    font-size: 80px;
+  }
+
+  .nama #deskripsi-hero {
+    font-size: 22px;
+    width: 700px;
+  }
+
+  .hero .foto {
+    padding-left: 200px;
+  }
+
+  #foto-ava {
+    width: 350px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
